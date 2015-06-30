@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://github.com/LairdCP" name="origin"/>
+  
+  <project groups="default" name="wb-buildroot.git" path="wb/buildroot" remote="origin" revision="29af684429219953aa521ed3ff63f449621bd663"/>
+  <project groups="default" name="wb.git" path="wb" remote="origin" revision="c9e865926d70b579996fb1ddfddb3e1e41d1df0e"/>
+  <project groups="default" name="wb-event_mon.git" path="wb/examples/eventmon/" remote="origin" revision="93157958a65d79ae6166580d29065176ebb2cbab"/>
+</manifest>
