@@ -13,7 +13,7 @@ Getting the WB project
 
 First step, pick which release you want. Odds are you want the most recent of your release. Below shows how to "map" a release number to a GA release:
 
-* __GA4__ : 3.4.x.x
+* __GA2__ : 3.4.x.x
 * __GA3__ : 3.5.0.x
 * __GA4__ : 3.5.1.x
 
