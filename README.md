@@ -21,7 +21,7 @@ Next, use Repo to initalize and fetch your release. This is a two-step process: 
 
     mkdir wb45n_3.5.0.33_source
     cd wb45n_3.5.0.33_source
-    repo init -u git@github.com:LairdCP/wb-manifests.git -m wb45n_3.5.0.33.xml
+    repo init -u https://github.com/LairdCP/wb-manifests.git -m wb45n_3.5.0.33.xml
     repo sync
 
 _Note: Repo will initialize a .repo directory and then place all files directly in the directory that you are in when you run the `repo` command. So we recommend making a subdirectory and working in there._
