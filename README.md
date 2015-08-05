@@ -53,6 +53,21 @@ Add to environment:
 
     export BUILDROOT_DL_DIR=/home/derosier/projects/wb-package-archive
 
+Setting the version number
+--------------------------
+
+By default the version number in /etc/summit-release will read similar to:
+
+    Laird Linux development build 20150804
+
+Our production builds set /etc/summit-release during the build process; a missing release file triggers the build-system to place the development version number in it. You can set the release version number by doing the following for your build before you run make:
+
+    VERSION=3.5.0.33
+    export LAIRD_RELEASE_STRING="Laird Linux wb45n-laird_fips-${VERSION}"
+
+The above is what our Jenkins build system does for each release build.
+
+
 Known source issues
 -------------------
 
