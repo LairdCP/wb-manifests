@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://github.com/LairdCP" name="origin"/>
+  
+  <project groups="default" name="wb-buildroot.git" path="wb/buildroot" remote="origin" revision="15ecc911b3e85f9b8448c2c4ac6182146ca62703"/>
+  <project groups="default" name="wb.git" path="wb" remote="origin" revision="90eeb7c86f128724114cef9c543ea4a65da0e3ff"/>
+  <project groups="default" name="wb-event_mon.git" path="wb/examples/eventmon/" remote="origin" revision="1302c3ba3402d041309c72cbc5c4bcb59d538f0f"/>
+  <project groups="default" name="wb_smartBASIC_apps.git" path="wb/buildroot/package/lrd/externals/wb_smartBASIC_apps" remote="origin" revision="e12eafce3f61e00ac4ee1820afd99e7b0893b761"/>
+  <project groups="default" name="wb_sdk_pil.git" path="wb/examples/sdk_wf_pil" remote="origin" revision="3e8bcdf72bf943f74deb02e428f6e39e06e50105"/>
+</manifest>
