@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://github.com/LairdCP" name="origin"/>
+  
+  <project name="wb-buildroot.git" path="wb/buildroot" remote="origin" revision="83462dd7769d8b5688816384a498c3d5dbe5df0b"/>
+  <project name="wb.git" path="wb" remote="origin" revision="adda0bc3b78eab06b36c98ca70622692363f2e36"/>
+</manifest>
