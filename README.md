@@ -16,13 +16,19 @@ First step, pick which release you want. Odds are you want the most recent of yo
 * __GA2__ : 3.4.x.x
 * __GA3__ : 3.5.0.x
 * __GA4__ : 3.5.1.x
+* __GA5__ : 3.5.2.x
+* __GA6__ : 3.5.3.x
 
 Next, use Repo to initalize and fetch your release. This is a two-step process: first you tell Repo which manifest to use and then you tell it to fetch everything.
 
-    mkdir wb45n_3.5.0.33_source
-    cd wb45n_3.5.0.33_source
-    repo init -u https://github.com/LairdCP/wb-manifests.git -m wb45n_3.5.0.33.xml
+    mkdir wb_3.5.3.11_source
+    cd wb_3.5.3.11_source
+    repo init -u https://github.com/LairdCP/wb-manifests.git -m wbXXn_3.5.3.11.xml
     repo sync
+
+For GA releases up to (including) GA4, the manifest is called wb45n_version.xml.
+
+For GA releases from GA5 and up, the manifest is called wbXXn_version.xml.
 
 _Note: Repo will initialize a .repo directory and then place all files directly in the directory that you are in when you run the `repo` command. So we recommend making a subdirectory and working in there._
 
@@ -34,12 +40,17 @@ There's more to go into about this, but for the sake of quick-start:
     cd wb
     make wb45n
 
+To make the wb50n:
+
+    make wb50n
+
+
 Build sources archive
 ---------------------
 
 We maintain a buildroot source binary archive on GitHub. Sometimes the source of the packages goes missing temporarily, or have been moved since last we updated the package in buildroot. Additionally, the Laird MSD packages our builds depend on are also in the repository.
 
-If cloned, and your `BUILDROOT_DL_DIR` is set to this directory, then a build won't have to go and download the source. Alternately, any missing packages you can't find can be directly downloaded from GitHub and added to your `BUILDROOT_DL_DIR`.
+If cloned, and your `BR2_DL_DIR` is set to this directory, then a build won't have to go and download the source. Alternately, any missing packages you can't find can be directly downloaded from GitHub and added to your `BR2_DL_DIR`.
 
 GitHub:
 
@@ -51,19 +62,21 @@ Clone:
 
 Add to environment:
 
-    export BUILDROOT_DL_DIR=/home/derosier/projects/wb-package-archive
+    export BR2_DL_DIR=/home/derosier/projects/wb-package-archive
+
+For GA4 and earlier versions, `BUILDROOT_DL_DIR` is the equivalent variable name. Please use this instead.
 
 Setting the version number
 --------------------------
 
 By default the version number in /etc/summit-release will read similar to:
 
-    Laird Linux development build 20150804
+    Laird Linux development build 20161220
 
 Our production builds set /etc/summit-release during the build process; a missing release file triggers the build-system to place the development version number in it. You can set the release version number by doing the following for your build before you run make:
 
-    VERSION=3.5.0.33
-    export LAIRD_RELEASE_STRING="Laird Linux wb45n-laird_fips-${VERSION}"
+    VERSION=3.5.3.11
+    export LAIRD_RELEASE_STRING="Laird Linux wb45n-laird-${VERSION}"
 
 The above is what our Jenkins build system does for each release build.
 
@@ -75,7 +88,7 @@ Known source issues
 
 __Applies to:__ All versions
 
-The MSD package needs to be downloaded from the Laird website and placed where Buildroot can find it. If you use a `BUILDROOT_DL_DIR` place the file there.
+The MSD package needs to be downloaded from the Laird website and placed where Buildroot can find it. If you use a `BUILDROOT_DL_DIR` or `BR2_DL_DIR`, place the file there.
 
 
 ### Can't find crda source package ###
