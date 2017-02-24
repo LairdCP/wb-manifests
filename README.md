@@ -44,6 +44,10 @@ To make the wb50n:
 
     make wb50n
 
+To make a wb50n_rdvk:
+
+    make wb50n_rdvk
+
 
 Build sources archive
 ---------------------
