@@ -13,6 +13,9 @@
   <project path="wb/buildroot/package/lrd-closed-source/externals/kernel"
            name="wb-kernel.git" />
 
+  <project path="wb/buildroot/package/lrd-closed-source/externals/kernel/drivers/net/wireless/laird/lrdmwl"
+           name="lrdmwl.git" />
+
   <project path="wb/buildroot/package/lrd/externals/php_sdk"
            name="php_sdk.git" />
 
