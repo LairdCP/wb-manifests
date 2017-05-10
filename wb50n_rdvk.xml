@@ -16,12 +16,6 @@
   <project path="wb/buildroot/package/lrd-closed-source/externals/kernel/drivers/net/wireless/laird/lrdmwl"
            name="lrdmwl.git" />
 
-  <project path="wb/buildroot/package/lrd/externals/php_sdk"
-           name="php_sdk.git" />
-
-  <project path="wb/buildroot/package/lrd/externals/dcas"
-           name="dcas.git" />
-
   <project path="wb/buildroot/package/lrd/externals/lrd-network-manager"
            name="lrd_network_manager.git" />
 
