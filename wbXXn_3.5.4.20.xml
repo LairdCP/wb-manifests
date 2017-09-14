@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://github.com/LairdCP" name="origin"/>
+  
+  <project name="dcas.git" path="wb/buildroot/package/lrd/externals/dcas" remote="origin" revision="5f2b4bf6831641f1d76af2045bf11be535f46b3d"/>
+  <project name="wb-buildroot.git" path="wb/buildroot" remote="origin" revision="8dd2671e88da62080247b86c34f6f6988f46f5a1"/>
+  <project name="wb.git" path="wb" remote="origin" revision="f993c3c4e11cf9facc0114ceae6a083fe7764bf1"/>
+  <project name="php_sdk.git" path="wb/buildroot/package/lrd/externals/php_sdk" remote="origin" revision="02b9e119e9fa1e1768939117d32816b48873366d"/>
+</manifest>
