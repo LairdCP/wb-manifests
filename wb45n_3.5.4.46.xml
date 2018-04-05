@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://github.com/LairdCP" name="origin"/>
+  
+  <project name="at91bootstrap.git" path="wb/buildroot/package/lrd/externals/at91bootstrap3" remote="origin" revision="e6033d1206316342aa8086b2fa6b2737a2116df8" upstream="B_GA7"/>
+  <project name="dcas.git" path="wb/buildroot/package/lrd/externals/dcas" remote="origin" revision="8a2fcac81e2b16f5385ce5a71e20b5556ac5e510" upstream="B_GA7"/>
+  <project name="u-boot.git" path="wb/buildroot/package/lrd/externals/u-boot" remote="origin" revision="0a516c8ad5f67061db652accf36d274c3baa62d4" upstream="B_GA7"/>
+  <project name="wb-buildroot.git" path="wb/buildroot" remote="origin" revision="7cb778af4cf415369a1c0587fe5c517940b9305e" upstream="B_GA7"/>
+  <project name="wb.git" path="wb" remote="origin" revision="f6098e750fc0259093fe1d0a39b096ad61889a45" upstream="B_GA7"/>
+  <project name="wb-kernel.git" path="wb/buildroot/package/lrd/externals/kernel" remote="origin" revision="adad623c181e847025f06f54630aa035d17e7f05" upstream="B_GA7"/>
+  <project name="php_sdk.git" path="wb/buildroot/package/lrd/externals/php_sdk" remote="origin" revision="4f9f0f4ab8e6d8d3d10d7cc78218d572be03e16a" upstream="B_GA7"/>
+</manifest>
