@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="origin" fetch="https://github.com/LairdCP" />
-  <default remote="origin" revision="master" />
+  <default remote="origin" revision="lrd-3.5.5.x" />
 
   <project path="wb"
            name="wb.git" />
@@ -10,16 +10,22 @@
   <project path="wb/buildroot"
            name="wb-buildroot.git" />
 
-  <project path="wb/buildroot/package/lrd-closed-source/externals/kernel"
+  <project path="wb/buildroot/package/lrd/externals/at91bootstrap3"
+           name="at91bootstrap.git" />
+
+  <project path="wb/buildroot/package/lrd/externals/u-boot"
+           name="u-boot.git" />
+
+  <project path="wb/buildroot/package/lrd/externals/kernel"
            name="wb-kernel.git" />
 
-  <project path="wb/buildroot/package/lrd-closed-source/externals/kernel/drivers/net/wireless/laird/lrdmwl"
+  <project path="wb/buildroot/package/lrd/externals/kernel/drivers/net/wireless/laird/lrdmwl"
            name="lrdmwl.git" />
 
   <project path="wb/buildroot/package/lrd/externals/lrd-network-manager"
            name="lrd_network_manager.git" />
 
-  <project path="wb/buildroot/package/lrd-closed-source/externals/firmware"
-           name="laird_linux-firmware.git" />
+  <project path="wb/buildroot/package/lrd/externals/sterling_supplicant"
+           name="sterling_supplicant.git" />
 
 </manifest>
