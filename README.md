@@ -18,12 +18,13 @@ First step, pick which release you want. Odds are you want the most recent of yo
 * __GA4__ : 3.5.1.x
 * __GA5__ : 3.5.2.x
 * __GA6__ : 3.5.3.x
+* __GA7__ : 3.5.4.x
 
 Next, use Repo to initalize and fetch your release. This is a two-step process: first you tell Repo which manifest to use and then you tell it to fetch everything.
 
-    mkdir wb_3.5.3.11_source
-    cd wb_3.5.3.11_source
-    repo init -u https://github.com/LairdCP/wb-manifests.git -m wbXXn_3.5.3.11.xml
+    mkdir wb_3.5.4.46_source
+    cd wb_3.5.4.46_source
+    repo init -u https://github.com/LairdCP/wb-manifests.git -m wbXXn_3.5.4.46.xml
     repo sync
 
 For GA releases up to (including) GA4, the manifest is called wb45n_version.xml.
@@ -92,7 +93,7 @@ Known source issues
 
 __Applies to:__ All versions
 
-The MSD package needs to be downloaded from the Laird website and placed where Buildroot can find it. If you use a `BUILDROOT_DL_DIR` or `BR2_DL_DIR`, place the file there.
+The MSD package needs to be downloaded from the Laird website or our wb-package-archive.git and placed where Buildroot can find it. If you use a `BUILDROOT_DL_DIR` or `BR2_DL_DIR`, place the file there.
 
 
 ### Can't find crda source package ###
