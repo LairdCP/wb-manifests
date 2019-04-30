@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="origin" fetch="ssh://git@github.com/LairdCP" />
+
+  <default remote="origin" revision="refs/tags/LRD-REL-4.0.0.45" />
+
+  <project path="wb"
+           name="wb.git" />
+
+  <project path="wb/buildroot"
+           name="wb-buildroot.git" />
+
+  <project path="wb/buildroot/package/lrd/externals/php_sdk"
+           name="php_sdk.git" />
+
+  <project path="wb/buildroot/package/lrd/externals/dcas"
+           name="dcas.git" />
+
+  <project path="wb/buildroot/package/lrd/externals/kernel"
+           name="wb-kernel.git" />
+
+  <project path="wb/buildroot/package/lrd/externals/at91bootstrap3"
+           name="at91bootstrap.git" />
+
+  <project path="wb/buildroot/package/lrd/externals/u-boot"
+           name="u-boot.git" />
+</manifest>
