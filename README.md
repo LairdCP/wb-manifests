@@ -1,7 +1,7 @@
 Ezurio WB source HowTo
 =====================
 
-Ezurio no longer makes public software releases for WB products, for the customer specific private release please contact you Sales or Support Representative
+Ezurio no longer makes public software releases for WB products, for the customer specific private release, please contact you Sales or Support Representative
 
 Preparation
 -----------
